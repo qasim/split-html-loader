@@ -56,11 +56,11 @@ module.exports = {
 };
 ```
 
-The loader takes two parameters, the `target` specifying the media query key you want to compile against, and the `value` you want that key to be. In this case, we specified that we only want to compile `<!-- platform: mobile -->` and want everything else to be stripped out.
+The loader takes two parameters, the `target` specifying the key you want to compile against, and the `value` you want that key to be. In this case, we specified that we only want to compile `<!-- platform: mobile -->` and want everything else to be stripped out.
 
 ### Programmatic API
 
-You can also use this module natively, in Node. The options are the same, you simply pass in a CSS string you want to parse:
+You can also use this module natively, in Node. The options are the same, you simply pass in a HTML string you want to parse:
 
 ```js
 const split = require('split-html-loader');
