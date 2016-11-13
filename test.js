@@ -25,6 +25,13 @@ describe('split-html-loader', () => {
     assertOutputs('block', { 'platform': 'xbox' });
   });
 
+  it('runs multiple targets', () => {
+    assertOutputs('multiple-targets', {
+      'platform': 'xbox',
+      'locale': 'en'
+    });
+  });
+
   it('errors if a block doesn\'t end', () => {
     assertThrows(
       'block-unended', { 'platform': 'xbox' },
